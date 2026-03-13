@@ -1,4 +1,5 @@
-import org.openqa.selenium.WebDriver;
+package Trainning;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
