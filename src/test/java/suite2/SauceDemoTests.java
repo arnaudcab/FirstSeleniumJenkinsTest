@@ -35,8 +35,8 @@ public class SauceDemoTests {
         try {
             Thread.sleep(1000);
             int d = 30;
-            Duration du = d.toDuration();
-            WebDriverWait wait = new WebDriverWait(driver, d;
+            Duration du = Duration.ofMillis(30);
+            WebDriverWait wait = new WebDriverWait(driver, du;
             wait.until(expectation);
         } catch (Throwable error) {
             Assert.fail("Timeout waiting for Page Load Request to complete.");
