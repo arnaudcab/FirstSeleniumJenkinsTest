@@ -34,7 +34,7 @@ public class SauceDemoTests {
         };
         try {
             Thread.sleep(1000);
-            int d = 30;
+            int d = 30; //duration
             Duration du = Duration.ofMillis(30);
             WebDriverWait wait = new WebDriverWait(driver, du;
             wait.until(expectation);
