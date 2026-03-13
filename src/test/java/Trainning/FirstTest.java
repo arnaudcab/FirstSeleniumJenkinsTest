@@ -10,7 +10,7 @@ public class FirstTest {
     private ChromeDriver driver;
 
     @Test
-    public void testEasy(){
+    public void TestAutomationUniversitySite_Title(){
         driver.get("https://testautomationu.applitools.com/");
         driver.manage().window().minimize();
 
@@ -19,13 +19,17 @@ public class FirstTest {
     }
 
     @Test
-    public void TestTwo(){
+    public void TestGoogleSite_Title(){
         driver.get("https://www.google.co.uk/");
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
+        AssertJUnit.assertEquals("Google", driver.getTitle());
+    }
 
-        String title1 = driver.getTitle();
-        System.out.println("title is "+title1);
-        AssertJUnit.assertEquals("Google", title1);
+    @Test
+    public void TestFeedlySite_Title(){
+        driver.get("https://feedly.com/");
+        //driver.manage().window().maximize();
+        AssertJUnit.assertEquals("FeedlyWITHTYPO", driver.getTitle());
     }
 
     @BeforeTest
